@@ -16,7 +16,7 @@ This project is a boilerplate for creating a Google Chrome Extension with React 
 - Clone this repository
 
 ```
-git clone https://github.com/timelessco/react-vite-chrome-extension
+git clone https://github.com/toptal083/ItsWare-Clickup-Chrome-Extension.git
 ```
 
 - Install dependencies
