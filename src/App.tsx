@@ -9,7 +9,6 @@ function App() {
   useEffect(() => {
     const accessToken = localStorage.getItem("clickup_token");
 
-    console.log("useEffect: accessToken", accessToken);
     if (accessToken) {
       fetchWorkspaceInfo();
     }
@@ -30,16 +29,13 @@ function App() {
           return;
         }
 
-        console.log(redirectResponse, "redirectResponse");
         // Extract the `access_token` from the redirect response
         const urlParams = new URLSearchParams(new URL(redirectResponse).search);
-        console.log(urlParams, "urlParams");
         const accessToken = urlParams.get("access_token");
 
         if (accessToken) {
           localStorage.setItem("clickup_token", accessToken);
           setIsConnected(true);
-          console.log("Access token stored successfully:", accessToken);
           fetchWorkspaceInfo(); // Fetch workspace data after successful connection
         } else {
           console.error("Access token not found in response.");

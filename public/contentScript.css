@@ -1,0 +1,135 @@
+/* General Panel Container */
+#itsware-panel {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Left Panel */
+#itsware-panel .itsware-left-panel {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel Headings */
+#itsware-panel h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Buttons */
+/* Device Item Actions - Buttons */
+#itsware-panel button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-size: 18px; /* Adjusted size for better visual balance */
+  border: 2px solid transparent; /* Initial transparent border */
+  border-radius: 50%; /* Circular buttons */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  background-color: transparent; /* Default background */
+  color: #333; /* Icon color */
+}
+
+/* Hover Effects for Buttons */
+#itsware-panel button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Tiny gray opacity background */
+  border-color: #ccc; /* Light gray border on hover */
+}
+
+/* Modal Styles */
+#itsware-device-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#itsware-device-modal.fade-in {
+  opacity: 1;
+}
+
+#itsware-device-modal .modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#itsware-device-modal .search-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#itsware-device-modal .unlinked-device-list {
+  list-style-type: none;
+  padding: 0;
+}
+/* 
+#itsware-panel .add-device-btn {
+  background-color: #f39c12;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+#itsware-panel .add-device-btn:hover {
+  opacity: 0.8;
+} */
+
+.itsware-device-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.itsware-device-item:hover {
+  background-color: #f1f1f1;
+}
+
+.itsware-device-item-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itsware-device-item-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.itsware-device-item-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.itsware-device-item-label {
+    font-size: 14px;
+    color: #666;
+}

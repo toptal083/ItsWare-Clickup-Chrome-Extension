@@ -1,32 +1,29 @@
 {
-    "name": "react-vite-chrome-extension",
-    "description": "Starter pack for Chrome extension development uses React + Vite",
-    "version": "0.0.1",
-    "manifest_version": 3,
-    "icons": {
-        "16": "logo16.png"
-    },
-    "action": {
-        "default_popup": "index.html",
-        "default_icon": {
-            "16": "logo16.png"
-        }
-    },
-    "permissions": [
-        "storage",
-        "tabs",
-        "identity"
-    ],
-    "host_permissions": [
-        "http://localhost:3000/*", 
-        "https://app.clickup.com/*"
-    ],
-    "content_scripts": [
-        {
-          "matches": [
-            "https://app.clickup.com/*"
-          ],
-          "js": ["contentScript.jsx"]
-        }
-    ]
+  "name": "react-vite-chrome-extension",
+  "description": "Starter pack for Chrome extension development uses React + Vite",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "16": "logo16.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "logo16.png"
+    }
+  },
+  "permissions": ["storage", "tabs", "identity"],
+  "host_permissions": ["http://localhost:3000/*", "https://app.clickup.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.clickup.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["contentScript.css"],
+      "matches": ["https://app.clickup.com/*"]
+    }
+  ]
 }
