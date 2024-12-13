@@ -1,19 +1,11 @@
 # React TypeScript + Vite Chrome Extension Starter
 
-![build](https://github.com/timelessco/react-vite-chrome-extension/workflows/build/badge.svg)
-
-![react-vite-chrome-extension](./assets/cover.png)
-
 This project is a boilerplate for creating a Google Chrome Extension with React + Vitejs + TailwindCSS + TypeScript.
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-
-## :bulb: Preview
-
-![react-vite-chrome-extension](./assets/preview.png)
 
 ## :package: Requirements
 
